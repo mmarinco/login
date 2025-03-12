@@ -1,2 +1,38 @@
-<input type="password" id="" />
-<h1> Hola Mundo </h1>
+<!-- Formulario de registro -->
+<div id="register-form" class="form-container" style="display: none;">
+    <!-- Título principal del formulario -->
+    <h1>Crear Cuenta</h1>
+    <!-- Inicio del formulario con el id 'registerForm' -->
+    <form id="registerForm">
+        <!-- Grupo de campos para el nombre completo -->
+        <div class="form-group">
+           <!-- Etiqueta del campo 'Nombre completo' -->
+            <label for="reg-name">Nombre completo</label>
+            <!-- Campo de entrada para el nombre, requerido -->
+            <input type="text" id="reg-email" name="name" required>
+            <!-- Mensaje de error si el nombre no es ingresado -->
+            <div class="error-message" id="name error">Por favor ingrese su nombre</div>
+        </div>
+        <!-- Grupo de campos para el correo electrónico -->
+        <div class="form-group">
+            <!-- Etiqueta del campo 'Correo electrónico' -->
+            <label for="reg-email">Correo electronico</label>
+            <!-- Campo de entrada para el correo electrónico, requerido -->
+            <input type="email" id="reg-email" name="email" required>
+            <!-- Mensaje de error si el correo electrónico no es válido -->
+            <div class="error-message" id="reg-email-error">Por favor ingrese su correo valido</div>
+        </div>
+        <!-- Grupo de campos para la contraseña -->
+        <div class="form-group">
+            <!-- Etiqueta del campo 'Contraseña' -->
+            <label for="reg-password">Contraseña</label>
+            <!-- Grupo de entrada para la contraseña -->
+            <div class="input-group">
+                <!-- Campo de entrada para la contraseña, requerido -->
+                <input type="password" id="reg-password" name="password" required>
+                
+                <!-- Icono de visibilidad para mostrar/ocultar la contraseña --><span class="toggle-password" id="regTogglePassword">👁</span>
+                </div>
+                <!-- Mensaje de error si la contraseña no cumple con los requisitos -->
+                <div class="error-message" id="reg-password-error">La contraseña debe tener al menos 6 caracteres</div>
+            </div>
