@@ -21,7 +21,7 @@
 }
 
 /* Cambia el color del botón al pasar el cursor sobre él */
-.logout-btn:hover { /* Error tipográfico: debería ser .logout-btn:hover */
+.logout-btn:hover { 
     background-color: #c0392b; /* Color de fondo rojo oscuro */
 }
 
@@ -53,4 +53,75 @@
     float: right; /* Flota a la derecha del contenedor */
     font-size: 1.5rem; /* Tamaño de fuente de 1.5 rem */
     cursor: pointer; /* Cambia el cursor a un puntero (indica que es clickeable) */
+} 
+
+* {
+    margin: 0; /*Elimina los márgenes predeterminados de los elementos.*/
+    padding: 0; /*Elimina los espacios internos (padding) predeterminados.*/
+    box-sizing: border-box;  /*Evita que el padding y el borde aumenten el tamaño total del elemento, lo que ayuda en el diseño responsivo.*/
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Establece la fuente predeterminada para todo el documento */
+}
+
+
+body {
+    display: flex; /*Activa Flexbox en el <body>, permitiendo alinear elementos internos fácilmente.*/
+    justify-content: center; /* Centra los elementos hijos horizontalmente dentro del <body>.*/
+    align-items: center; /*Centra los elementos hijos verticalmente dentro del <body>.*/
+    min-height: 100vh; /*Garantiza que el <body> ocupe al menos el 100% de la altura de la ventana del navegador.*/
+    background: linear-gradient(120deg,#3498db,#8e44ad);  /* Aplica un fondo con un degradado lineal de 120 grados */
+}
+
+
+
+.container{
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    overflow: hidden;
+    width: 100%;
+    max-width: 400px;
+    padding: 2rem;
+}
+
+.form-container{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+h1{
+  text-align: center;  
+  margin-bottom: 2rem;
+  color: #333;
+
+}
+
+.form-group{
+    margin-bottom: 1.5rem;
+}
+
+.form-group label{
+    display: block;
+    margin-bottom: 0.5;
+    font-weight: 600;
+    color: #333;
+
+}
+
+.input-group{
+    position: relative;
+}
+
+.form-group input{
+    width: 100%;
+    padding: 0.8rem;
+    border-radius: 4px;
+    font-size: 1rem;
+    transition: border-color 0.3s;
+
+}
+
+.form-group input:focus{
+    border-color: #3498db;
+    outline: none;
 }
