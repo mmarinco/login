@@ -68,3 +68,62 @@ h1{
     border-color: #3498db;
     outline: none;
 }
+
+
+/*INICIO PARTE 3 DE CSS Sara */
+/* Contenedor flexible para el estado de usuarios */
+.users-status {
+    display: flex; /* Usa el modelo de caja flexible (flexbox) */
+    align-items: center; /* Centra los elementos verticalmente */
+    justify-content: center; /* Centra los elementos horizontalmente */
+    margin: 1rem 0; /* Aplica un margen de 1 rem arriba y abajo */
+}
+
+/* Estilo para un punto que indica estado (círculo pequeño) */
+.status-dot {
+    width: 10px; /* Ancho de 10 píxeles */
+    height: 10px; /* Alto de 10 píxeles */
+    background-color: #2ecc71; /* Color de fondo verde */
+    border-radius: 50%; /* Hace el elemento completamente redondo */
+    margin-right: 8px; /* Margen a la derecha de 8 píxeles */
+}
+
+/* Estilo base para el botón de cierre de sesión */
+.logout-btn {
+    background-color: #e74c3c; /* Color de fondo rojo */
+}
+
+/* Cambia el color del botón al pasar el cursor sobre él */
+.logout-btn:hover { 
+    background-color: #c0392b; /* Color de fondo rojo oscuro */
+}
+
+/* Estilo para el modal (ventana emergente) */
+.modal {
+    display: none; /* Oculta el modal por defecto */
+    position: fixed; /* Fija el modal en la ventana del navegador */
+    top: 0; /* Lo coloca en la parte superior de la ventana */
+    left: 0; /* Lo coloca en la parte izquierda de la ventana */
+    width: 100%; /* Ocupa el 100% del ancho de la ventana */
+    height: 100%; /* Ocupa el 100% del alto de la ventana */
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente negro */
+    align-items: center; /* Centra el contenido verticalmente */
+    justify-content: center; /* Centra el contenido horizontalmente */
+    z-index: 1000; /* Asegura que el modal esté por encima de otros elementos */
+}
+
+/* Estilo para el contenido del modal */
+.modal-content {
+    background-color: white; /* Fondo blanco */
+    border-radius: 10px; /* Bordes redondeados */
+    padding: 2rem; /* Relleno interno de 2 rem */
+    width: 100%; /* Ocupa el 100% del ancho disponible */
+    max-width: 400px; /* Ancho máximo de 400 píxeles */
+}
+
+/* Estilo para el botón de cerrar el modal */
+.close {
+    float: right; /* Flota a la derecha del contenedor */
+    font-size: 1.5rem; /* Tamaño de fuente de 1.5 rem */
+    cursor: pointer; /* Cambia el cursor a un puntero (indica que es clickeable) */
+} 
