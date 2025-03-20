@@ -33,7 +33,7 @@
     left: 0; /* Lo coloca en la parte izquierda de la ventana */
     width: 100%; /* Ocupa el 100% del ancho de la ventana */
     height: 100%; /* Ocupa el 100% del alto de la ventana */
-    background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente negro (error: debería ser 0.5) */
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente negro */
     align-items: center; /* Centra el contenido verticalmente */
     justify-content: center; /* Centra el contenido horizontalmente */
     z-index: 1000; /* Asegura que el modal esté por encima de otros elementos */
