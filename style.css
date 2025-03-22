@@ -69,6 +69,72 @@ h1{
     outline: none;
 }
 
+/*pagina 2 css(shari)*/
+
+.toggle-password{
+    position: absolute; /* Posiciona el elemento de manera absoluta respecto a su contenedor */
+    right: 10px; /* Coloca el elemento a 10px del borde derecho del contenedor */
+    top: 10px; /* Coloca el elemento a 10px del borde superior del contenedor */
+    cursor: pointer; /* Cambia el cursor a una mano al pasar sobre el elemento, indicando que es clickeable */
+    color: #666; /* Define el color del texto o ícono en un tono gris */
+}
+
+.error-message{
+    color: #e74c3c; /* Color rojo para el texto del mensaje de error */
+    font-size: 0.85rem; /* Tamaño de fuente pequeño para el mensaje de error */
+    margin-top: 0.3rem; /* Margen superior para separar el mensaje del elemento anterior */
+    display: none; /* Oculta el mensaje por defecto */
+}
+
+.forgot-password{
+    text-align: right; /* Alinea el texto a la derecha */
+    margin-bottom: 1.5rem; /* Margen inferior para separar este elemento del siguiente */
+}
+
+.forgot-password a{
+    color: #3498db; /* Color azul para el enlace */
+    text-decoration: none; /* Elimina el subrayado predeterminado de los enlaces */
+    font-size: 0.9rem; /* Tamaño de fuente pequeño para el enlace */
+}
+
+.forgot-password a:hover{
+    text-decoration: underline; /* Subraya el enlace cuando el usuario pasa el cursor sobre él */
+}
+
+.btn{
+    background-color: #3498db; /* Fondo azul para el botón */
+    color: white; /* Texto blanco */
+    border: none; /* Elimina el borde predeterminado del botón */
+    padding: 0.8rem; /* Espaciado interno para hacer el botón más grande */
+    border-radius: 4px; /* Bordes redondeados */
+    font-size: 1rem; /* Tamaño de fuente mediano */
+    cursor: pointer; /* Cambia el cursor a una mano al pasar sobre el botón */
+    width: 100%; /* Ancho completo del contenedor */
+    transition: background-color 0.3s; /* Transición suave para el cambio de color de fondo */
+}
+
+.btn:hover{
+    background-color: #2980b9; /* Cambia el color de fondo a un azul más oscuro al pasar el cursor */
+}
+
+.register-link{
+    text-align: center; /* Alinea el texto al centro */
+    margin-top: 1.5rem; /* Margen superior para separar este elemento del anterior */
+    font-size: 0.9rem; /* Tamaño de fuente pequeño */
+}
+
+.register-link a{
+    color: #3498db; /* Color azul para el enlace */
+    text-decoration: none; /* Elimina el subrayado predeterminado de los enlaces */
+}
+
+.register-link a:hover{
+    text-decoration: underline; /* Subraya el enlace cuando el usuario pasa el cursor sobre él */
+}
+
+.user-info{
+    display: none; /* Oculta el elemento por defecto */
+}
 
 /*INICIO PARTE 3 DE CSS Sara */
 /* Contenedor flexible para el estado de usuarios */
