@@ -1,3 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Configuración del documento -->
+    <meta charset="utf-8"> <!-- Define la codificación de caracteres -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Hace que la página sea responsive -->
+    <title>Inicio de sesión</title> <!-- Título de la página -->
+    <link rel="stylesheet" href="style.css"> <!-- Enlace a la hoja de estilos externa -->
+</head>
+<body>
+    <div class="container">
+        <!-- Formulario de inicio de sesión -->
+        <div id="login-form" class="form-container">
+            <h1>Iniciar sesión</h1> <!-- Título del formulario -->
+            <form id="loginform">
+                <div class="form-group">
+                    <label for="email">Correo electrónico</label> <!-- Etiqueta para el campo de email -->
+                    <input type="email" id="email" name="email" required> <!-- Campo de entrada para el email -->
+                    <div class="error-message" id="email-error">Por favor ingrese un correo válido</div> <!-- Mensaje de error -->
+                </div>
+                <div class="form-group">
+                    <label for="password">Contraseña</label> <!-- Etiqueta para el campo de contraseña -->
+                    <div class="input-group">
+                        <input type="password" id="password" name="password" required> <!-- Campo de entrada para la contraseña -->
+                        <span class="toggle-password" id="toggle-password"></span> <!-- Icono o botón para mostrar/ocultar la contraseña -->
+                    </div>
+                    <div class="error-message" id="password-error">La contraseña debe tener al menos 6 caracteres</div> <!-- Mensaje de error -->
+                </div>
+                <div class="forgot-password">
+                    <a href="#" id="forgotPasswordlink">¿Olvidaste tu contraseña?</a> <!-- Enlace para recuperar la contraseña -->
+                </div>
+                <button type="submit" class="btn">Ingresar</button> <!-- Botón de envío del formulario -->
+            </form>
+            <div class="register-link">
+                ¿No tienes una cuenta? <a href="#" id="registerlink">Regístrate</a> <!-- Enlace para registrarse -->
+            </div>
+        </div>
+    </div>
+
+
+
+
 <!-- Formulario de registro -->
 <div id="register-form" class="form-container" style="display: none;">
     <!-- Título principal del formulario -->
